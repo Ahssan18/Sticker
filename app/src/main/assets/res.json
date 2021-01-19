@@ -1,0 +1,76 @@
+{
+"stickers":[
+  {
+    "id": 1,
+    "name": "Sad Cat 1",
+    "imageurl": "https://i.ibb.co/MMZtWk4/download.webp",
+    "url": "https://signal.art/addstickers/#pack_id=3bc77ee5ddace6200746010bcc6435c4&pack_key=5fb91b4df31f6562c366253b7416ed470ddc294a205d57a9810fba52348fc002"
+  },
+  {
+    "id": 2,
+    "name": "Sad Cat 2 and others",
+    "imageurl": "https://i.ibb.co/8xb3BSc/download5.webp",
+    "url": "https://signal.art/addstickers/#pack_id=7a7e0d99971aec291d59d0823abe811e&pack_key=9fb85c54998fb52af076ac3cb080601892a40b9d2f59a3319e26602a30f6d876"
+  },
+  {
+    "id": 3,
+    "name": "PEPE - The Green Frog",
+    "imageurl": "https://i.ibb.co/6gr2NzK/pepe.webp",
+    "url": "https://signal.art/addstickers/#pack_id=e62d12fecc060ee419d743395252ef04&pack_key=3da3e438bf6f5f030cd5f364c4f157f3921b135f24622785bac3243e0cf82630"
+  },
+  {
+    "id": 4,
+    "name": "Kermit the Frog",
+    "imageurl": "https://i.ibb.co/M1gRbf4/kermit.webp",
+    "url": "https://signal.art/addstickers/#pack_id=d50e5cb133c1162ac92899833f26c56c&pack_key=e0b397a5cacb1f336c54b4fea6bfd3545ff46fae0b32b52abd27a42da3f80f4e"
+  },
+  {
+    "id": 5,
+    "name": "Twitch Emotes",
+    "imageurl": "https://i.ibb.co/0t8BzJv/twitch-bttv.webp",
+    "url": "https://signal.art/addstickers/#pack_id=2b241cc70259176a809d2bcd6b30461b&pack_key=a2ff3381a9c99e76cb71e241aef25977a2bb5c3f98828f82b1968e694725d0d7"
+  },
+  {
+    "id": 6,
+    "name": "Gavin Meme Pack",
+    "imageurl": "https://i.ibb.co/4Wk7qF1/gavin.webp",
+    "url": "https://signal.art/addstickers/#pack_id=52f4174a9ee3b053d7a94a9830b9436c&pack_key=04ba5ece48fc6840e5324a37eecdb40e7d53ab10f4d96d8038d5c29376eb739a"
+  },
+  {
+    "id": 7,
+    "name": "Random Meme Pack",
+    "imageurl": "https://i.ibb.co/HXR3n1J/download4.webp",
+    "url": "https://signal.art/addstickers/#pack_id=2f977990cc97776e3507f1f8c8ffa1b9&pack_key=9ef33e78c237f9da414e8758af1fba810878ae34c03afea43b2035bcb2d5321a"
+  },
+  {
+    "id": 8,
+    "name": "delectus aut autem",
+    "imageurl": "false",
+    "url": "gg"
+  },
+  {
+    "id": 9,
+    "name": "Rage Faces",
+    "imageurl": "https://i.ibb.co/ChrbD7Z/download3.webp",
+    "url": "https://signal.art/addstickers/#pack_id=761a43f5cb8868c706df2877be67d4ab&pack_key=d13af9cf31d6caa531b042c1a475fa78bc7410d2845f5bf5763214f41c29c312"
+  },
+  {
+    "id": 10,
+    "name": "Random Meme Pack 2",
+    "imageurl": "https://i.ibb.co/1Mt0PgQ/download2.webp",
+    "url": "https://signal.art/addstickers/#pack_id=7a1a0e746556ff3decadf23a5833d5a6&pack_key=f89beb20b170994756eac11822de5d961ce096567cb3e3f7b81922982ba8ea78"
+  },
+  {
+    "id": 11,
+    "name": "BTTV Emotes Meme Pack",
+    "imageurl": "https://i.ibb.co/LJWDvvP/bttv.webp",
+    "url": "https://signal.art/addstickers/#pack_id=429a81c70fb2083c2e7dbf1bd1796fba&pack_key=8500497316fc84d7ff25af2bc618e947aaa1475aab49f55a466a16ca68554bde"
+  },
+  {
+    "id": 12,
+    "name": "Pepe the Frog Twitch Emotes",
+    "imageurl": "https://i.ibb.co/QHhdLwg/pepe2.webp",
+    "url": "https://signal.art/addstickers/#pack_id=3b1a14d750f6a4015a679f20e75b27d5&pack_key=ab3c94a0e8d305ae5f2a333f7f985647fb1009c42d196be8a5ee92a1cd3dbeeb"
+  }
+]
+}
