@@ -16,6 +16,7 @@ import com.asha.nightowllib.NightOwl;
 import com.facebook.ads.AdSettings;
 import com.facebook.ads.AdSize;
 import com.facebook.ads.AdView;
+import com.facebook.shimmer.ShimmerFrameLayout;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -41,6 +42,7 @@ public class HomeFragment extends Fragment {
     private List<ResponseData> list;
     private RecyclerView recyclerView;
     private AdView adView;
+    private ShimmerFrameLayout shimmerFrameLayout;
     View root;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -67,9 +69,11 @@ public class HomeFragment extends Fragment {
     }
 
     private void callApi() {
+        shimmerFrameLayout.setVisibility(View.VISIBLE);
         RestCleint.getInstance().Api().getSteaker().enqueue(new Callback<List<ResponseData>>() {
             @Override
             public void onResponse(Call<List<ResponseData>> call, Response<List<ResponseData>> response) {
+                shimmerFrameLayout.setVisibility(View.GONE);
                 list.addAll(response.body());
                 setAdapter();
             }
@@ -84,6 +88,7 @@ public class HomeFragment extends Fragment {
     private void init() {
         NightOwl.owlAfterCreate(getActivity());
         recyclerView = root.findViewById(R.id.recycle_stickers);
+        shimmerFrameLayout=root.findViewById(R.id.shimmer_view_container);
         list = new ArrayList<>();
     }
 

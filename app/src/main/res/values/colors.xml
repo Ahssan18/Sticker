@@ -10,5 +10,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="accent">#6191f3</color>
     <color name="night_accent">#1851b4</color>
+    <color name="colorLightgrey">#B3B3B3</color>
 
 </resources>

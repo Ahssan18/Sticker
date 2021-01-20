@@ -57,7 +57,7 @@ public class StickerAdapter extends RecyclerView.Adapter<StickerAdapter.StickerV
         }else
         {
             holder.btnAdd.setBackgroundColor(context.getResources().getColor(R.color.purple_200));
-//            holder.btnAdd.setTextColor(Color.BLACK);
+            holder.btnAdd.setTextColor(Color.WHITE);
         }
         holder.btnAdd.setOnClickListener(v -> {
             Uri uri = Uri.parse(list.get(position).getUrl()); // missing 'http://' will cause crashed

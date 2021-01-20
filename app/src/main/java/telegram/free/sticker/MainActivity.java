@@ -2,6 +2,7 @@ package telegram.free.sticker;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -97,17 +99,25 @@ public class MainActivity extends AppCompatActivity {
 
 
         fab2_share.setOnClickListener(view -> {
-            Intent sendIntent = new Intent();
-            sendIntent.setAction(Intent.ACTION_SEND);
-            sendIntent.putExtra(Intent.EXTRA_TEXT,
-                    "Hey check out my app at: https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID);
-            sendIntent.setType("text/plain");
-            startActivity(sendIntent);
+            try {
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT,
+                        "Hey check out my app at: https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID);
+                sendIntent.setType("text/plain");
+                startActivity(sendIntent);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         });
 
         fab1_mail.setOnClickListener(view -> {
-            Intent rateIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + getApplicationContext().getPackageName()));
-            startActivity(rateIntent);
+            try {
+                Intent rateIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + getApplicationContext().getPackageName()));
+                startActivity(rateIntent);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
         });
     }
@@ -121,7 +131,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         NightOwl.owlAfterCreate(this);
         fab_main = findViewById(R.id.fab);
@@ -141,6 +150,9 @@ public class MainActivity extends AppCompatActivity {
             fab2_share.setColorFilter(R.color.night_purple_200);
             textview_mail.setBackgroundColor(getResources().getColor(R.color.night_purple_200));
             textview_share.setBackgroundColor(getResources().getColor(R.color.night_purple_200));
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                getWindow().setStatusBarColor(ContextCompat.getColor(getApplicationContext(), (R.color.night_purple_200)));
+            }
 
         } else {
             toolbar.setBackgroundColor(getResources().getColor(R.color.purple_200));
@@ -155,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+//        getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
